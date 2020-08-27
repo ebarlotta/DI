@@ -1,10 +1,81 @@
 <!DOCTYPE html> 
-<html>
+<html lang="es">
     <head>
         <meta charset="utf-8">
-        <title>Inicio</title>
+        <title>Fiambres Mendocinos</title>
+        <link rel="stylesheet" href="archivos/css/styles.css"/>
     </head>
     <body>
+        <div id ="container">
+            <!-- CABECERA -->
+            <header id="header">
+                <div id="logo">
+                    <img src="archivos/img/logo.png" alt="Logo"/>
+                    <a href="index.html">
+                    Tienda de Fiambres 
+                    </a>
+    
+                </div>
+            </header>
+
+        <!-- MENU -->
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="Categoria/ConsultarCategorias.html">Categorias</a>
+                </li>
+                <li>
+                    <a href="Productos/VistaProductos.html">Productos</a>
+                </li>
+                <li>
+                    <a href="Tipos/ConsultarTipos.html">Tipos</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>           
+                <li>
+                    <a href="#">Quienes somos</a>
+                </li>
+                
+                
+            </ul>
+        </nav>
         
+        <div id="content">
+        <!-- BARRA LATERAL -->
+        <aside id="lateral">
+
+        <div id="login" class="block_aside">
+            <h3>Ingresar</h3>
+            <form action="#" method="post">
+
+                <label for="email">Email</label>
+                <input type="email" name="email"/> 
+
+                <label for="password">Contrasña</label>
+                <input type="password" name="password"/>
+
+            <input type="submit" value="Enviar"/>
+            </form>
+            <ul>
+                <li><a href="#">Mis pedidos</a></li>
+                <li><a href="#">Gestionar pedidos</a></li>
+                <li><a href="#">Gestionar categorias</a></li>
+            </ul>
+            </div>
+        </aside>
+        <!-- CONTENIDO CENTRAL -->
+        <div id="central">
+            <h1>Productos destacados</h1>
+        </div>
+
+        <!-- PIE DE PAGINA -->
+            <footer id="footer">
+                <p> Desarrollado por Alumnos de San Vicente de Paul &copy; <?=date('Y')?></p>
+            </footer>
+        </div>
     </body>
 </html>
