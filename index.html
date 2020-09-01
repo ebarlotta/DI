@@ -1,22 +1,51 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <title>Fiambres Mendocinos</title>
-        <link rel="stylesheet" href="archivos/css/styles.css"/>
-    </head>
-    <body>
-        <div id ="container">
-            <!-- CABECERA -->
-            <header id="header">
-                <div id="logo">
-                    <img src="archivos/img/logo.png" alt="Logo"/>
+
+<head>
+    <meta charset="utf-8">
+    <title>Fiambres Mendocinos</title>
+    <link rel="stylesheet" href="archivos/css/styles.css" />
+</head>
+
+<body>
+    <div id="container">
+        <!-- CABECERA -->
+        <header id="header">
+            <div style="display: flex; width: 100%;">
+                <div id="logo" style="background-color: green;">
+                    <img src="archivos/img/logo.png" alt="Logo" />
                     <a href="index.html">
                     Tienda de Fiambres 
                     </a>
-    
                 </div>
-            </header>
+                <div style="display: flex; text-align: center; vertical-align: middle; color:beige; background-color: red; width: 30%;">
+                    <!-- BARRA LATERAL -->
+                    <aside id="lateral">
+                        <div id="login" class="block_aside">
+                            <h3>Ingresar</h3>
+                            <form action="#" method="post">
+
+                                <label for="email">Email</label>
+                                <input type="email" name="email" />
+
+                                <label for="password">Contrasña</label>
+                                <input type="password" name="password" />
+
+                                <input type="submit" value="Enviar" />
+                            </form>
+
+                        </div>
+                    </aside>
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="#">Mis pedidos</a>
+                        <a href="#">Gestionar pedidos</a>
+                        <a href="#">Gestionar categorias</a>
+                    </div>
+                </div>
+            </div>
+        </header>
 
         <!-- MENU -->
         <nav id="menu">
@@ -35,47 +64,39 @@
                 </li>
                 <li>
                     <a href="#">Contacto</a>
-                </li>           
+                </li>
                 <li>
                     <a href="#">Quienes somos</a>
                 </li>
-                
-                
+
+
             </ul>
         </nav>
-        
+
         <div id="content">
-        <!-- BARRA LATERAL -->
-        <aside id="lateral">
-
-        <div id="login" class="block_aside">
-            <h3>Ingresar</h3>
-            <form action="#" method="post">
-
-                <label for="email">Email</label>
-                <input type="email" name="email"/> 
-
-                <label for="password">Contrasña</label>
-                <input type="password" name="password"/>
-
-            <input type="submit" value="Enviar"/>
-            </form>
-            <ul>
-                <li><a href="#">Mis pedidos</a></li>
-                <li><a href="#">Gestionar pedidos</a></li>
-                <li><a href="#">Gestionar categorias</a></li>
-            </ul>
+            <!-- CONTENIDO CENTRAL -->
+            <div id="central">
+                <h1>Productos destacados</h1>
             </div>
-        </aside>
-        <!-- CONTENIDO CENTRAL -->
-        <div id="central">
-            <h1>Productos destacados</h1>
-        </div>
 
-        <!-- PIE DE PAGINA -->
+            <!-- PIE DE PAGINA -->
             <footer id="footer">
-                <p> Desarrollado por Alumnos de San Vicente de Paul &copy; <?=date('Y')?></p>
+                <p> Desarrollado por Alumnos de San Vicente de Paul &copy;
+                    <?=date('Y')?>
+                </p>
             </footer>
         </div>
-    </body>
+
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+</body>
+
 </html>
