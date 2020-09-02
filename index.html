@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" ng-app="datosApp">
 
 <head>
     <meta charset="utf-8">
     <title>Fiambres Mendocinos</title>
     <link rel="stylesheet" href="archivos/css/styles.css" />
+
+    <!-- Angular -->
+    <script type="text/javascript" src="archivos/angular.min.js"></script>
+    <script type="text/javascript" src="archivos/fiambresController.js">
+    </script>
+
 </head>
 
-<body>
+<body ng-controller="fiambresController">
     <div id="container">
         <!-- CABECERA -->
         <header id="header">
@@ -20,20 +26,19 @@
                 </div>
                 <div id="usuaio-login">
                     <!-- BARRA LATERAL -->
-                        <div id="login" class="block_aside">
-                            <h3>Ingresar</h3>
-                            <form action="#" method="post">
+                    <div id="login" class="block_aside" style="display: flex; justify-content: center;">
+                        <form action="#" method="post">
 
-                                <label for="email">Email</label>
-                                <input type="email" name="email" />
+                            <label for="email">Email</label>
+                            <input type="email" name="email" />
 
-                                <label for="password">Contrasña</label>
-                                <input type="password" name="password" />
+                            <label for="password">Contrasña</label>
+                            <input type="password" name="password" />
 
-                                <input type="submit" value="Enviar" />
-                            </form>
+                            <input type="submit" value="Enviar" />
+                        </form>
 
-                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -74,6 +79,29 @@
             <!-- CONTENIDO CENTRAL -->
             <div id="central">
                 <h1>Productos destacados</h1>
+                <table>
+                    <tr>
+                        <td>Descripción</td>
+                        <td>Imágen</td>
+                        <td>Descripción larga</td>
+                        <td>Cantidad</td>
+                        <td>Precio Unitario</td>
+                        <td>Total</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><img src="archivos/assets/images/paraiso.jpeg" alt="" style="width: 100px;height: 75px;"></td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                </table>
+
+                <input type="text" ng-model="oreja"> {{ oreja }}
+                <input type="button" value="Enviar solicitud" ng-click="EnviarDatos();">
+                <input type="text" ng-model="respuesta">
+
             </div>
 
             <!-- PIE DE PAGINA -->
