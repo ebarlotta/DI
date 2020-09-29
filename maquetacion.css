@@ -1,0 +1,112 @@
+@media only screen and (max-width: 600px) {
+    * {
+        margin-top: 8px;
+        padding: 0;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+    #header {
+        width: 100%;
+        height: 100px;
+        background-color: lightblue;
+    }
+    #nav {
+        width: 100%;
+        height: 50px;
+        background-color: lightgreen;
+        color: white;
+    }
+    #aside {
+        width: 30%;
+        display: flex;
+        line-height: 10px;
+        align-items: center;
+        margin-top: 0px;
+        height: auto;
+        background-color: magenta;
+        /*padding: 7%;*/
+        text-align: center;
+    }
+    #seccion {
+        width: 70%;
+        margin-top: 0px;
+        height: 100%;
+        margin-right: 8px;
+        background-color: lime
+    }
+    #cuadro {
+        height: 150%;
+        width: 100%;
+        display: flex;
+    }
+    #footer {
+        width: 100%;
+        height: 50px;
+        background-color: mediumseagreen;
+    }
+    .art {
+        margin-top: 5px;
+        background-color: blue;
+        margin: 5px 5px;
+        height: 40px;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        padding-left: 15px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    * {
+        margin-top: 8px;
+        padding: 0;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+    #header {
+        width: 100%;
+        height: 100px;
+        background-color: red;
+    }
+    #nav {
+        width: 100%;
+        height: 50px;
+        background-color: lightgreen;
+        color: white;
+    }
+    #aside {
+        width: 30%;
+        margin-top: 0px;
+        height: auto;
+        background-color: mediumseagreen;
+        padding: 7%;
+        text-align: center;
+    }
+    #seccion {
+        width: 70%;
+        margin-top: 0px;
+        height: 100%;
+        margin-right: 8px;
+        background-color: lime
+    }
+    #cuadro {
+        height: 150%;
+        width: 100%;
+        display: flex;
+    }
+    #footer {
+        width: 100%;
+        height: 50px;
+        background-color: mediumseagreen;
+    }
+    .art {
+        margin-top: 5px;
+        background-color: blue;
+        margin: 5px 5px;
+        height: 40px;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        padding-left: 15px;
+    }
+}
