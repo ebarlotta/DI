@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio N°3 - Diseño de Interfaces</title>
+    <link rel="stylesheet" href="resources/css/styles.css" />
+    <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="resources/fonts/css/all.css" />
+    <link rel="stylesheet" href="resources/fonts/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script src="resources/bootstrap/js/bootstrap.min.js"></script>
+    <script src="resources/fonts/js/all.js"></script>
+    <script src="resources/fonts/js/all.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+          <div id="ui">
+            <form class="form-group">
+              <h3>Advanced Search</h3>
+              <br />
+              <div class="row">
+                <div class="col-lg-4">
+                  <label><strong>First Name</strong></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="fname"
+                    placeholder="First Name"
+                  />
+                </div>
+                <div class="col-lg-4">
+                  <label><strong>Last Name</strong></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="lname"
+                    placeholder="Last Name"
+                  />
+                </div>
+                <div class="col-lg-4">
+                  <label><strong>Country</strong></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="country"
+                    placeholder="Country"
+                  />
+                </div>
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-lg-4">
+                  <label><strong>Phone Number</strong></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="phone"
+                    placeholder="Phone Number"
+                  />
+                </div>
+                <div class="col-lg-4">
+                  <label><strong>Age</strong></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="age"
+                    placeholder="Age"
+                  />
+                </div>
+                <div class="col-lg-4">
+                  <label><strong>Email</strong></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="email"
+                    placeholder="Email"
+                  />
+                </div>
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-lg-4">
+                  <label><strong>Category</strong></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="category"
+                    placeholder="Category"
+                  />
+                </div>
+                <div class="col-lg-4">
+                  <label><strong>Education</strong></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="education"
+                    placeholder="Education"
+                  />
+                </div>
+                <div class="col-lg-4">
+                  <label><strong>Gender</strong></label>
+                  <br />
+                  <div
+                    class="custom-control custom-radio custom-control-inline"
+                  >
+                    <input
+                      class="custom-control-input"
+                      type="radio"
+                      name="opciones"
+                      id="male"
+                      value="option1"
+                    />
+                    <label class="custom-control-label mr-1" for="male"
+                      >Male</label
+                    >
+                  </div>
+                  <div
+                    class="custom-control custom-radio custom-control-inline"
+                  >
+                    <input
+                      class="custom-control-input"
+                      type="radio"
+                      name="opciones"
+                      id="female"
+                      ivalue="option2"
+                    />
+                    <label class="custom-control-label" for="female"
+                      >Female</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-lg-6">
+                  <button
+                    type="submit"
+                    name="submit"
+                    class="btn btn-primary btn-block"
+                  >
+                    <i class="fas fa-search"></i> Search
+                  </button>
+                </div>
+              </div>
+              <br />
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+    </div>
+  </body>
+</html>

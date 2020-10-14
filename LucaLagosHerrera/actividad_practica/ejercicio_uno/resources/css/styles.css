@@ -1,0 +1,76 @@
+body {
+  background-image: url(../img/ocean.jpg);
+  background-size: cover;
+}
+
+#ui {
+  padding: 30px;
+  margin-top: 50px;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 18px;
+}
+
+#ui h2 {
+  background-color: rgb(41, 77, 111);
+  color: white;
+  padding: 22px;
+  margin-bottom: 25px;
+  text-align: center;
+  margin-top: -30px;
+  width: 730px;
+  margin-left: -30px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom: 10px solid rgb(62, 115, 165);
+}
+
+#prioridad {
+  font-size: 22px;
+}
+
+#requerido {
+  text-align: right;
+  color: red;
+}
+
+.row .icono {
+  background: rgb(41, 77, 111);
+  color: white;
+  border-color: rgb(41, 77, 111);
+}
+
+.row input {
+  border-color: rgb(41, 77, 111);
+}
+
+.row select {
+  border-color: rgb(41, 77, 111);
+}
+
+.row textarea {
+  border-color: rgb(41, 77, 111);
+}
+
+.row .longi {
+  padding-right: 16px;
+}
+
+.row .longe {
+  padding-right: 13px;
+}
+
+.row .longo {
+  padding-right: 20px;
+}
+
+.row .boton {
+  background-color: rgb(41, 77, 111);
+  border-color: rgb(41, 77, 111);
+  margin-bottom: -20px;
+}
+
+.row .boton:hover {
+  background-color: rgb(62, 115, 165);
+}

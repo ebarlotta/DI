@@ -1,0 +1,26 @@
+body {
+  background-image: url(../img/moon.jpg);
+  background-size: cover;
+}
+
+#ui {
+  padding: 25px;
+  margin-top: 100px;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 0px rgb(109, 183, 220);
+}
+
+.row button {
+  margin-bottom: -60px;
+  margin-top: 2px;
+  margin-left: 165px;
+  background-color: rgb(109, 183, 220);
+  border-color: rgb(109, 183, 220);
+}
+
+.row button:hover {
+  background-color: rgb(71, 124, 150);
+  border-color: rgb(71, 124, 150);
+}
