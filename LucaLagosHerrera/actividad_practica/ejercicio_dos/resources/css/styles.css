@@ -1,0 +1,33 @@
+body {
+  background-image: url(../img/nightcity.jpg);
+  background-size: cover;
+}
+
+#ui {
+  padding: 25px;
+  margin-top: 80px;
+  background-color: white;
+  border-radius: 7px;
+  font-family: "Poppins", sans-serif;
+}
+
+.row img {
+  position: absolute;
+  margin-top: -25px;
+  margin-left: -25px;
+  width: 1200px;
+  height: 438px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.row .boton {
+  margin-bottom: -18px;
+  background-color: rgb(101, 177, 77);
+  border-color: rgb(101, 177, 77);
+}
+
+.row .boton:hover {
+  background-color: rgb(71, 128, 53);
+  border-color: rgb(71, 128, 53);
+}
